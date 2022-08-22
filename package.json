@@ -1,6 +1,6 @@
 {
   "name": "swetrix-vue",
-  "version": "1.0.0-rc3",
+  "version": "1.0.0-rc.3",
   "description": "Swetrix Tracking integration for Vue v3",
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
-  "funding": [{
+  "funding": [
+    {
       "type": "paypal",
       "url": "https://paypal.me/ansidev"
     },
@@ -37,9 +38,14 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "tsc",
+    "prepare": "husky install",
     "lint": "eslint . --ext .ts --ignore-path .gitignore src",
-    "lint:fix": "eslint --ext .ts --ignore-path .gitignore --fix src"
+    "lint:fix": "eslint --ext .ts --ignore-path .gitignore --fix src",
+    "build": "tsc",
+    "release:major": "standard-version --release-as major",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:pre": "standard-version --prerelease rc"
   },
   "peerDependencies": {
     "vue": "^3"
@@ -48,12 +54,21 @@
     "swetrix": "^1.3.2"
   },
   "devDependencies": {
-    "vue": "^3.2.37",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
     "eslint": "^8.22.0",
-    "typescript": "^4.7.4"
+    "husky": "^8.0.1",
+    "standard-version": "^9.5.0",
+    "typescript": "^4.7.4",
+    "vue": "^3.2.37"
   },
   "bugs": {
     "url": "https://github.com/ansidev/swetrix-vue/issues"
   },
-  "homepage": "https://github.com/ansidev/swetrix-vue#readme"
+  "homepage": "https://github.com/ansidev/swetrix-vue#readme",
+  "standard-version": {
+    "skip": {
+      "tag": true
+    }
+  }
 }
