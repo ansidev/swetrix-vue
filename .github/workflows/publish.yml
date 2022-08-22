@@ -40,7 +40,7 @@ jobs:
 
       - name: Publish NPM package
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
+          pnpm config set "//registry.npmjs.org/:_authToken" "${{ env.NPM_TOKEN }}"
           pnpm publish --access public --tag ${{ env.PUBLISH_TAG }}
