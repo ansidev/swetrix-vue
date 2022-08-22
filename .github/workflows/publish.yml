@@ -39,6 +39,8 @@ jobs:
           [[ "${GITHUB_REF#refs/*/v}" =~ ^([0-9]+\.)?([0-9]+\.)?(\*|[0-9]+)$ ]] && echo "PUBLISH_TAG=latest" >> $GITHUB_ENV || echo "PUBLISH_TAG=rc" >> $GITHUB_ENV
 
       - name: Publish NPM package
-        run: pnpm publish --access public --tag ${{ env.PUBLISH_TAG }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          pnpm config set "//registry.npmjs.org/:_authToken" "${NPM_TOKEN}"
+          pnpm publish --access public --tag ${{ env.PUBLISH_TAG }}

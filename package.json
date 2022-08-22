@@ -1,6 +1,6 @@
 {
   "name": "swetrix-vue",
-  "version": "1.0.0-rc1",
+  "version": "1.0.0-rc2",
   "description": "Swetrix Tracking integration for Vue v3",
   "repository": {
     "type": "git",
