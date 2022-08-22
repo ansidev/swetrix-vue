@@ -2,6 +2,10 @@
 
 # Swetrix Vue 3 integration
 
+[![npm version](https://img.shields.io/npm/v/swetrix-vue.svg)](https://www.npmjs.com/package/swetrix-vue)
+[![Build Status](https://github.com/ansidev/swetrix-vue/workflows/publish_npm_package/badge.svg)](https://github.com/ansidev/swetrix-vue/actions/workflows/publish.yml)
+[![Sourcegraph](https://sourcegraph.com/github.com/ansidev/swetrix-vue/-/badge.svg)](https://sourcegraph.com/github.com/ansidev/swetrix-vue?badge)
+
 Unofficial [Swetrix Analytics](https://go2.vn/roke5) integration for Next.js.
 
 ## Integration
@@ -34,7 +38,7 @@ You can now import, and use the Swetrix hook on your project:
 // ./src/main.ts
 
 import { createApp } from 'vue'
-import Swetrix from 'ansidev/swetrix-vue'
+import Swetrix from 'swetrix-vue'
 
 const app = createApp({})
 
@@ -59,7 +63,7 @@ You can enable debug mode to send events when testing things locally. It will al
 // ./src/main.ts
 
 import { createApp } from 'vue'
-import Swetrix from 'ansidev/swetrix-vue'
+import Swetrix from 'swetrix-vue'
 
 const app = createApp({})
 
