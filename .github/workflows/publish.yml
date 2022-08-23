@@ -4,13 +4,16 @@ on:
   push:
     tags:
       - 'v*.*.*'
+
 jobs:
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      - uses: pnpm/action-setup@v2.2.2
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2.2.2
         with:
           version: '7.x'
           run_install: false
@@ -20,8 +23,8 @@ jobs:
         run: |
           echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
+      - name: Setup pnpm cache
+        uses: actions/cache@v3
         with:
           path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
           key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
