@@ -15,19 +15,19 @@ Unofficial [Swetrix Analytics](https://go2.vn/roke5) integration for Next.js.
 Run the following command to install in your project:
 
 ```
-npm install ansidev/swetrix-vue
+npm install swetrix-vue
 ```
 
 Or with yarn:
 
 ```
-yarn add ansidev/swetrix-vue
+yarn add swetrix-vue
 ```
 
 Or with pnpm:
 
 ```
-pnpm add ansidev/swetrix-vue
+pnpm add swetrix-vue
 ```
 
 ### Basic usage
