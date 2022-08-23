@@ -24,3 +24,6 @@ dist-ssr
 *.sw?
 
 example-dist
+
+# Local Netlify folder
+.netlify
