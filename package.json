@@ -39,21 +39,22 @@
   ],
   "exports": {
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs"
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js"
     }
   },
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist/**/*"
+    "dist"
   ],
   "scripts": {
     "prepare": "husky install",
     "lint": "eslint . --ext .ts --ignore-path .gitignore src",
     "lint:fix": "eslint --ext .ts --ignore-path .gitignore --fix src",
-    "build": "tsup lib/index.ts --dts --format cjs,esm",
+    "build": "tsup lib/index.ts --dts --format cjs,esm --clean",
     "build:example": "pnpm run build && vue-tsc --noEmit && vite build",
     "dev": "pnpm run build -- --watch && vite",
     "preview": "vite preview",
