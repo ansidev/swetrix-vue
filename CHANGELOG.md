@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## 1.1.0 (2022-08-23)
+
+### Bug Fixes
+
+* **lib:** correct wrong package configs ([576631b](https://github.com/ansidev/swetrix-vue/commit/576631beee16b0a35c3c5f9dbb35643414e953bd))
+
 ## 1.1.0-rc.1 (2022-08-23)
 
 ### Bug Fixes
