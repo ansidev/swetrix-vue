@@ -5,6 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/swetrix-vue.svg)](https://www.npmjs.com/package/swetrix-vue)
 [![Build Status](https://github.com/ansidev/swetrix-vue/workflows/publish_npm_package/badge.svg)](https://github.com/ansidev/swetrix-vue/actions/workflows/publish.yml)
 [![Sourcegraph](https://sourcegraph.com/github.com/ansidev/swetrix-vue/-/badge.svg)](https://sourcegraph.com/github.com/ansidev/swetrix-vue?badge)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d9cca26d-22e6-445e-b460-7f3b8c9984cd/deploy-status)](https://app.netlify.com/sites/swetrix-vue/deploys)
 
 Unofficial [Swetrix Analytics](https://go2.vn/roke5) integration for Next.js.
 
@@ -15,19 +16,19 @@ Unofficial [Swetrix Analytics](https://go2.vn/roke5) integration for Next.js.
 Run the following command to install in your project:
 
 ```
-npm install ansidev/swetrix-vue
+npm install swetrix-vue
 ```
 
 Or with yarn:
 
 ```
-yarn add ansidev/swetrix-vue
+yarn add swetrix-vue
 ```
 
 Or with pnpm:
 
 ```
-pnpm add ansidev/swetrix-vue
+pnpm add swetrix-vue
 ```
 
 ### Basic usage
