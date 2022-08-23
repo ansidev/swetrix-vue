@@ -27,3 +27,9 @@ example-dist
 
 # Local Netlify folder
 .netlify
+
+# Task files
+Taskfile.yaml
+Taskfile.*.yaml
+Taskfile.yml
+Taskfile.*.yml
