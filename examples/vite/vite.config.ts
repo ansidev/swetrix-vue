@@ -10,8 +10,4 @@ export default defineConfig({
     }),
     Markdown()
   ],
-  build: {
-    outDir: 'example-dist',
-    assetsDir: './',
-  },
 })

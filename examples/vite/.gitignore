@@ -22,12 +22,3 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-
-# Local Netlify folder
-.netlify
-
-# Task files
-Taskfile.yaml
-Taskfile.*.yaml
-Taskfile.yml
-Taskfile.*.yml
