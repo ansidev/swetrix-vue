@@ -1,5 +1,5 @@
 import { createApp } from 'vue'
-import Swetrix from '../dist/index'
+import Swetrix from 'swetrix-vue'
 import './style.css'
 import App from './App.vue'
 

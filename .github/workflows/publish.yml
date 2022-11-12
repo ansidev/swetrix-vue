@@ -6,7 +6,7 @@ on:
       - 'v*.*.*'
 
 env:
-  DEPLOY_DIR: example-dist
+  DEPLOY_DIR: examples/vite/dist
 
 jobs:
   build_and_publish:
