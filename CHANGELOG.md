@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### 1.1.1 (2022-11-12)
+
+
+### Features
+
+* **example:** add vitejs example ([7e07ad7](https://github.com/ansidev/swetrix-vue/commit/7e07ad718c946dc47b92f1ef99b5fe5d1f89bccc))
+* **example:** update example ([7c17d5c](https://github.com/ansidev/swetrix-vue/commit/7c17d5c616d2d9ffd70c50f1cd84dfc91e5771af))
+
+
+### Bug Fixes
+
+* **docs:** fix wrong npm package name ([113f50c](https://github.com/ansidev/swetrix-vue/commit/113f50c7df7d2dc4ea62aacb8ba05ce3eebcd860))
+* **lib:** correct wrong package configs ([576631b](https://github.com/ansidev/swetrix-vue/commit/576631beee16b0a35c3c5f9dbb35643414e953bd))
+
 ## 1.1.0 (2022-08-23)
 
 ### Bug Fixes
