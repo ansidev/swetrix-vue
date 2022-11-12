@@ -72,7 +72,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
-    "eslint": "^8.25.0",
+    "eslint": "^8.27.0",
     "husky": "^8.0.1",
     "standard-version": "^9.5.0",
     "tsup": "^6.2.3",
