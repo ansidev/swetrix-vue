@@ -5,7 +5,7 @@ importers:
   .:
     specifiers:
       '@commitlint/cli': ^17.3.0
-      '@commitlint/config-conventional': ^17.2.0
+      '@commitlint/config-conventional': ^17.3.0
       eslint: ^8.27.0
       husky: ^8.0.2
       standard-version: ^9.5.0
@@ -17,7 +17,7 @@ importers:
       swetrix: 1.3.2
     devDependencies:
       '@commitlint/cli': 17.3.0
-      '@commitlint/config-conventional': 17.2.0
+      '@commitlint/config-conventional': 17.3.0
       eslint: 8.27.0
       husky: 8.0.2
       standard-version: 9.5.0
@@ -109,8 +109,8 @@ packages:
       - '@swc/wasm'
     dev: true
 
-  /@commitlint/config-conventional/17.2.0:
-    resolution: {integrity: sha512-g5hQqRa80f++SYS233dbDSg16YdyounMTAhVcmqtInNeY/GF3aA4st9SVtJxpeGrGmueMrU4L+BBb+6Vs5wrcg==}
+  /@commitlint/config-conventional/17.3.0:
+    resolution: {integrity: sha512-hgI+fN5xF8nhS9uG/V06xyT0nlcyvHHMkq0kwRSr96vl5BFlRGaL2C0/YY4kQagfU087tmj01bJkG9Ek98Wllw==}
     engines: {node: '>=v14'}
     dependencies:
       conventional-changelog-conventionalcommits: 5.0.0
