@@ -5,7 +5,7 @@
   "license": "MIT",
   "version": "1.1.1",
   "type": "module",
-  "packageManager": "pnpm@7.18.1",
+  "packageManager": "pnpm@7.18.2",
   "homepage": "https://github.com/ansidev/swetrix-vue",
   "funding": [
     {
