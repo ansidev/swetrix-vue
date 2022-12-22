@@ -4,6 +4,8 @@ import { watchEffect } from 'vue'
 import type { App, Plugin } from 'vue'
 import type { SwetrixVuePluginOptions } from './types'
 
+export type { SwetrixVuePluginOptions } from './types'
+
 /**
  * Vue Composition API for automatically tracking navigation changes on Vue v3 apps.
  *
