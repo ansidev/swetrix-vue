@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/ansidev/swetrix-vue/compare/v1.1.1...v1.1.2) (2022-12-22)
+
+
+### Features
+
+* **lib:** export type for plugin options ([99ca04d](https://github.com/ansidev/swetrix-vue/commit/99ca04dfb66e1d480e36efb9287731af37a6c117))
+* **example:** upgrade vitejs example to Vite v4 ([88503ae](https://github.com/ansidev/swetrix-vue/commit/88503ae381683353b9f089903dc409e2693089d5))
+
 ### 1.1.1 (2022-11-12)
 
 
