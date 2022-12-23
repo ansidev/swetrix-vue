@@ -7,7 +7,7 @@
 [![Sourcegraph](https://sourcegraph.com/github.com/ansidev/swetrix-vue/-/badge.svg)](https://sourcegraph.com/github.com/ansidev/swetrix-vue?badge)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/d9cca26d-22e6-445e-b460-7f3b8c9984cd/deploy-status)](https://app.netlify.com/sites/swetrix-vue/deploys)
 
-Unofficial [Swetrix Analytics](https://go2.vn/roke5) integration for Next.js.
+Unofficial [Swetrix Analytics](https://go2.vn/roke5) integration for Vue.js.
 
 ## Integration
 
