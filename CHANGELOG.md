@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/ansidev/swetrix-vue/compare/v1.1.1...v2.0.0) (2023-01-04)
+
+
+### Features
+
+* export type for plugin options ([99ca04d](https://github.com/ansidev/swetrix-vue/commit/99ca04dfb66e1d480e36efb9287731af37a6c117))
+
+
+### Breaking Changes
+
+* **deps:** update dependency swetrix to v2 ([9bf1780](https://github.com/ansidev/swetrix-vue/commit/9bf1780bd23f93e1f1e93e4b9282059abb9c6a61))
+
 ### [1.1.2](https://github.com/ansidev/swetrix-vue/compare/v1.1.1...v1.1.2) (2022-12-22)
 
 
