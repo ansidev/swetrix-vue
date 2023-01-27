@@ -9,12 +9,12 @@ importers:
       eslint: ^8.31.0
       husky: ^8.0.3
       standard-version: ^9.5.0
-      swetrix: ^2.0.0
+      swetrix: ^2.0.1
       tsup: ^6.5.0
       typescript: ^4.9.4
       vue: ^3.2.45
     dependencies:
-      swetrix: 2.0.0
+      swetrix: 2.0.1
     devDependencies:
       '@commitlint/cli': 17.3.0
       '@commitlint/config-conventional': 17.3.0
@@ -3151,11 +3151,11 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /swetrix/2.0.0:
-    resolution: {integrity: sha512-C19gWYRdNl8DaO5+jdhZjq1mcG/GzdmMAA2Y/WHGYvlIHkQEd9whzwAQD5Zu7jhDz41G59uatwIxXuQmYaN9qg==}
+  /swetrix/2.0.1:
+    resolution: {integrity: sha512-7SJuQF8/21xwUX9spJUia0uzEzV6niWh0FEgGdzNxcIAG6cznQ9U/mTb5Iq37s0rNaHFzZGmTkbOqINWEySkQQ==}
     dependencies:
       '@types/node': 18.11.18
-      tslib: 2.4.1
+      tslib: 2.5.0
     dev: false
 
   /text-extensions/1.9.0:
@@ -3259,8 +3259,8 @@ packages:
       yn: 3.1.1
     dev: true
 
-  /tslib/2.4.1:
-    resolution: {integrity: sha512-tGyy4dAjRIEwI7BzsB0lynWgOpfqjUdq91XXAlIWD2OwKBH7oCl/GZG/HT4BOHrTlPMOASlMQ7veyTqpmRcrNA==}
+  /tslib/2.5.0:
+    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
     dev: false
 
   /tsup/6.5.0_typescript@4.9.4:
