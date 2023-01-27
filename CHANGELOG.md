@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/ansidev/swetrix-vue/compare/v2.0.0...v2.0.1) (2023-01-27)
+
+### Bug Fixes
+
+* **deps:** update dependency swetrix to `^2.0.1` ([4835d5e](https://github.com/ansidev/swetrix-vue/commit/4835d5ed3426e2066376f844f11161f3650c36ad))
+
 ## [2.0.0](https://github.com/ansidev/swetrix-vue/compare/v1.1.1...v2.0.0) (2023-01-04)
 
 

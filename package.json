@@ -3,7 +3,7 @@
   "description": "Swetrix Tracking integration for Vue v3",
   "author": "Le Minh Tri <ansidev@gmail.com>",
   "license": "MIT",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "packageManager": "pnpm@7.26.1",
   "homepage": "https://github.com/ansidev/swetrix-vue",
