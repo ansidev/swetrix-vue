@@ -12,47 +12,32 @@ jobs:
   build_and_publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2.2.4
-        with:
-          version: '7.x'
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
-
-      - name: Setup pnpm cache
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-
-      - name: Install dependencies
-        run: pnpm install
-
       - name: Build
         env:
           VITE_SWETRIX_PROJECT_ID: ${{ secrets.VITE_SWETRIX_PROJECT_ID }}
-        run: pnpm run build:example
+        uses: ghacts/static-site@main
+        with:
+          node-version: 18
+          skip-lint: true
+          skip-test: true
+          build-script: 'build:example'
+          output-dir: ${{ env.DEPLOY_DIR }}
 
       - name: Set publish tag
         run: |
-          [[ "${GITHUB_REF#refs/*/v}" =~ ^([0-9]+\.)?([0-9]+\.)?(\*|[0-9]+)$ ]] && echo "PUBLISH_TAG=latest" >> $GITHUB_ENV || echo "PUBLISH_TAG=rc" >> $GITHUB_ENV
+          ([[ "${GITHUB_REF#refs/*/v}" =~ ^([0-9]+\.)?([0-9]+\.)?(\*|[0-9]+)$ ]] && echo "PUBLISH_TAG=latest" >> "${GITHUB_ENV}") || echo "PUBLISH_TAG=rc" >> "${GITHUB_ENV}"
 
       - name: Deploy example
         env:
-          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+          PROD: ${{ env.PUBLISH_TAG == 'latest' }}
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-        run: |
-          pnpm add -g netlify-cli
-          [[ "${PUBLISH_TAG}" == "latest" ]] && netlify deploy -a ${{ env.NETLIFY_AUTH_TOKEN }} -s ${{ env.NETLIFY_SITE_ID }} -d ${{ env.DEPLOY_DIR }} -m "$(git log -1 --pretty=%B)" -p || netlify deploy -a ${{ env.NETLIFY_AUTH_TOKEN }} -s ${{ env.NETLIFY_SITE_ID }} -d ${{ env.DEPLOY_DIR }} -m "$(git log -1 --pretty=%B)"
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        uses: ghacts/manual-deploy-to-netlify@main
+        with:
+          auth-token: ${{ env.NETLIFY_AUTH_TOKEN }}
+          site-id: ${{ env.NETLIFY_SITE_ID }}
+          dir: ${{ env.DEPLOY_DIR }}
+          prod: ${{ env.PROD }}
 
       - name: Publish NPM package
         env:
