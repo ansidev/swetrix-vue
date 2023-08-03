@@ -36,5 +36,5 @@ jobs:
         uses: ghacts/manual-deploy-to-netlify@main
         with:
           auth-token: ${{ env.NETLIFY_AUTH_TOKEN }}
-          site-id: ${{ env.NETLIFY_SITE_ID }}
+          site: ${{ env.NETLIFY_SITE_ID }}
           dir: ${{ env.DEPLOY_DIR }}
