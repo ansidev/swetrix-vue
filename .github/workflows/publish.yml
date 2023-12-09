@@ -7,6 +7,7 @@ on:
 
 env:
   DEPLOY_DIR: examples/vite/dist
+  DEPLOY_FILTER: example-swetrix-vue-vite
 
 jobs:
   build_and_publish:
@@ -36,7 +37,7 @@ jobs:
         with:
           auth-token: ${{ env.NETLIFY_AUTH_TOKEN }}
           site: ${{ env.NETLIFY_SITE_ID }}
-          dir: ${{ env.DEPLOY_DIR }}
+          filter: ${{ env.DEPLOY_FILTER }}
           prod: ${{ env.PROD }}
 
       - name: Publish NPM package
