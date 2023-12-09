@@ -3,10 +3,11 @@ name: publish_npm_package
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
 
 env:
   DEPLOY_DIR: examples/vite/dist
+  DEPLOY_FILTER: example-swetrix-vue-vite
 
 jobs:
   build_and_publish:
@@ -20,7 +21,7 @@ jobs:
           node-version: 18
           skip-lint: true
           skip-test: true
-          build-script: 'build:example'
+          build-script: "build:example"
           output-dir: ${{ env.DEPLOY_DIR }}
 
       - name: Set publish tag
@@ -35,8 +36,8 @@ jobs:
         uses: ghacts/manual-deploy-to-netlify@main
         with:
           auth-token: ${{ env.NETLIFY_AUTH_TOKEN }}
-          site-id: ${{ env.NETLIFY_SITE_ID }}
-          dir: ${{ env.DEPLOY_DIR }}
+          site: ${{ env.NETLIFY_SITE_ID }}
+          filter: ${{ env.DEPLOY_FILTER }}
           prod: ${{ env.PROD }}
 
       - name: Publish NPM package
