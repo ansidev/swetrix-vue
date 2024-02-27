@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       swetrix:
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^3.0.0
+        version: 3.0.3
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.0.0
@@ -892,6 +892,13 @@ packages:
 
   /@types/node@18.11.18:
     resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+    dev: true
+
+  /@types/node@20.11.20:
+    resolution: {integrity: sha512-7/rR21OS+fq8IyHTgtLkDK949uzsa6n8BkziAKtPVpugIkO6D+/ooXMvzXxDnZrmtXVfjb1bKQafYpb8s89LOg==}
+    dependencies:
+      undici-types: 5.26.5
+    dev: false
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -3382,11 +3389,11 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /swetrix@2.0.1:
-    resolution: {integrity: sha512-7SJuQF8/21xwUX9spJUia0uzEzV6niWh0FEgGdzNxcIAG6cznQ9U/mTb5Iq37s0rNaHFzZGmTkbOqINWEySkQQ==}
+  /swetrix@3.0.3:
+    resolution: {integrity: sha512-PwJgIx0+2329HONCHNkjeg6cCgv/CI4rXsBOX1+xEgh6agahvGJiWjeBq20CsgnxE6NAnlW+Ki4bU7Nx7kfjdA==}
     dependencies:
-      '@types/node': 18.11.18
-      tslib: 2.5.0
+      '@types/node': 20.11.20
+      tslib: 2.6.2
     dev: false
 
   /text-extensions@1.9.0:
@@ -3464,8 +3471,8 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /tslib@2.5.0:
-    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
+  /tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
     dev: false
 
   /tsup@8.0.0(typescript@5.0.2):
@@ -3561,6 +3568,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+    dev: false
 
   /unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
