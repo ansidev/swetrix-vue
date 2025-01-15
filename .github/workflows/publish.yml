@@ -3,7 +3,7 @@ name: publish_npm_package
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - "v*.*.*"
 
 env:
   DEPLOY_DIR: examples/vite/dist
@@ -21,7 +21,7 @@ jobs:
           node-version: 18
           skip-lint: true
           skip-test: true
-          build-script: 'build:example'
+          build-script: "build:example"
           output-dir: ${{ env.DEPLOY_DIR }}
 
       - name: Set publish tag
