@@ -9,12 +9,12 @@ importers:
   .:
     dependencies:
       swetrix:
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^3.0.0
+        version: 3.1.1
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.0.0
-        version: 19.0.0(@types/node@18.11.18)(typescript@5.0.2)
+        version: 19.0.0(@types/node@20.12.11)(typescript@5.0.2)
       '@commitlint/config-conventional':
         specifier: ^19.0.0
         version: 19.0.0
@@ -29,7 +29,7 @@ importers:
         version: 9.5.0
       tsup:
         specifier: ^8.0.0
-        version: 8.0.0(typescript@5.0.2)
+        version: 8.0.0(postcss@8.4.21)(typescript@5.0.2)
       typescript:
         specifier: ^5.0.0
         version: 5.0.2
@@ -48,16 +48,16 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
-        version: 4.0.0(vite@4.0.4)(vue@3.2.45)
+        version: 4.0.0(vite@4.0.4(@types/node@20.12.11))(vue@3.2.45)
       typescript:
         specifier: ^4.9.4
         version: 4.9.4
       vite:
         specifier: ^4.0.4
-        version: 4.0.4(@types/node@18.11.18)
+        version: 4.0.4(@types/node@20.12.11)
       vite-plugin-vue-markdown:
         specifier: ^0.22.2
-        version: 0.22.2(vite@4.0.4)
+        version: 0.22.2(rollup@3.11.0)(vite@4.0.4(@types/node@20.12.11))
       vue-tsc:
         specifier: ^1.0.24
         version: 1.0.24(typescript@4.9.4)
@@ -572,8 +572,8 @@ packages:
   '@types/minimist@1.2.2':
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
 
-  '@types/node@18.11.18':
-    resolution: {integrity: sha512-DHQpWGjyQKSHj3ebjFI/wRKcqQcdR+MoFBygntYOZytCqNfkd2ZC4ARDJ2DQqhjH5p85Nnd3jhUJIXrszFX/JA==}
+  '@types/node@20.12.11':
+    resolution: {integrity: sha512-vDg9PZ/zi+Nqp6boSOT7plNuthRugEKixDv5sFTIpkE89MmNtEArAShI4mxuX2+UrLEe9pxC1vm2cjm9YlWbJw==}
 
   '@types/normalize-package-data@2.4.1':
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -599,6 +599,7 @@ packages:
 
   '@volar/vue-typescript@1.0.24':
     resolution: {integrity: sha512-9a25oHDvGaNC0okRS47uqJI6FxY4hUQZUsxeOUFHcqVxZEv8s17LPuP/pMMXyz7jPygrZubB/qXqHY5jEu/akA==}
+    deprecated: 'WARNING: This project has been renamed to @vue/typescript. Install using @vue/typescript instead.'
 
   '@vue/compiler-core@3.2.45':
     resolution: {integrity: sha512-rcMj7H+PYe5wBV3iYeUgbCglC+pbpN8hBLTJvRiK2eKQiWqu+fG9F+8sW99JdL4LQi7Re178UOxn09puSXvn4A==}
@@ -1953,8 +1954,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  swetrix@2.0.1:
-    resolution: {integrity: sha512-7SJuQF8/21xwUX9spJUia0uzEzV6niWh0FEgGdzNxcIAG6cznQ9U/mTb5Iq37s0rNaHFzZGmTkbOqINWEySkQQ==}
+  swetrix@3.1.1:
+    resolution: {integrity: sha512-UqhqdNL0AhyTJ9PEJC47PRL2gkYVtjZvtGIkPftG7ca+XVL7DANLwt4+4kq8Y/PAzhDtv8bc1WvXisa8NRjeuA==}
 
   text-extensions@1.9.0:
     resolution: {integrity: sha512-wiBrwC1EhBelW12Zy26JeOUkQ5mRu+5o8rpsJk5+2t+Y5vE7e842qtZDQ2g1NpX/29HdyFeJ4nSIhI47ENSxlQ==}
@@ -2005,8 +2006,8 @@ packages:
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  tslib@2.5.0:
-    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
+  tslib@2.6.2:
+    resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
 
   tsup@8.0.0:
     resolution: {integrity: sha512-9rOGn8LsFn2iAg2pCB1jnH7ygVuGjlzIomjw0jKXUxAii3iL5cXgm0jZMPKfFH1bSAjQovJ1DUVPSw+oDuIu8A==}
@@ -2064,6 +2065,9 @@ packages:
     engines: {node: '>=0.8.0'}
     hasBin: true
 
+  undici-types@5.26.5:
+    resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
+
   unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
     engines: {node: '>=18'}
@@ -2079,6 +2083,7 @@ packages:
 
   vite-plugin-vue-markdown@0.22.2:
     resolution: {integrity: sha512-MJ2cpEcI1ehfcQbpAMPA6ezhK2nrajL4q8999SXPbPMbRHB+gKoJvqrwei6QIdhCLkgwR1ZDEwigphtuoQAbbw==}
+    deprecated: '`vite-plugin-vue-markdown` is renamed to `unplugin-vue-markdown`. For usages in Vite, you also need to change the import path to `unplugin-vue-markdown/vite`.'
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0
 
@@ -2209,11 +2214,11 @@ snapshots:
       '@babel/helper-validator-identifier': 7.19.1
       to-fast-properties: 2.0.0
 
-  '@commitlint/cli@19.0.0(@types/node@18.11.18)(typescript@5.0.2)':
+  '@commitlint/cli@19.0.0(@types/node@20.12.11)(typescript@5.0.2)':
     dependencies:
       '@commitlint/format': 19.0.0
       '@commitlint/lint': 19.0.0
-      '@commitlint/load': 19.0.0(@types/node@18.11.18)(typescript@5.0.2)
+      '@commitlint/load': 19.0.0(@types/node@20.12.11)(typescript@5.0.2)
       '@commitlint/read': 19.0.0
       '@commitlint/types': 19.0.0
       execa: 8.0.1
@@ -2262,7 +2267,7 @@ snapshots:
       '@commitlint/rules': 19.0.0
       '@commitlint/types': 19.0.0
 
-  '@commitlint/load@19.0.0(@types/node@18.11.18)(typescript@5.0.2)':
+  '@commitlint/load@19.0.0(@types/node@20.12.11)(typescript@5.0.2)':
     dependencies:
       '@commitlint/config-validator': 19.0.0
       '@commitlint/execute-rule': 19.0.0
@@ -2270,7 +2275,7 @@ snapshots:
       '@commitlint/types': 19.0.0
       chalk: 5.3.0
       cosmiconfig: 8.3.6(typescript@5.0.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.11.18)(cosmiconfig@8.3.6)(typescript@5.0.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@20.12.11)(cosmiconfig@8.3.6(typescript@5.0.2))(typescript@5.0.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2515,11 +2520,13 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@rollup/pluginutils@5.0.2':
+  '@rollup/pluginutils@5.0.2(rollup@3.11.0)':
     dependencies:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
+      rollup: 3.11.0
 
   '@rollup/rollup-android-arm-eabi@4.7.0':
     optional: true
@@ -2573,13 +2580,15 @@ snapshots:
 
   '@types/minimist@1.2.2': {}
 
-  '@types/node@18.11.18': {}
+  '@types/node@20.12.11':
+    dependencies:
+      undici-types: 5.26.5
 
   '@types/normalize-package-data@2.4.1': {}
 
-  '@vitejs/plugin-vue@4.0.0(vite@4.0.4)(vue@3.2.45)':
+  '@vitejs/plugin-vue@4.0.0(vite@4.0.4(@types/node@20.12.11))(vue@3.2.45)':
     dependencies:
-      vite: 4.0.4(@types/node@18.11.18)
+      vite: 4.0.4(@types/node@20.12.11)
       vue: 3.2.45
 
   '@volar/language-core@1.0.24':
@@ -2958,9 +2967,9 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@18.11.18)(cosmiconfig@8.3.6)(typescript@5.0.2):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@20.12.11)(cosmiconfig@8.3.6(typescript@5.0.2))(typescript@5.0.2):
     dependencies:
-      '@types/node': 18.11.18
+      '@types/node': 20.12.11
       cosmiconfig: 8.3.6(typescript@5.0.2)
       jiti: 1.21.0
       typescript: 5.0.2
@@ -2971,6 +2980,7 @@ snapshots:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
+    optionalDependencies:
       typescript: 5.0.2
 
   cross-spawn@7.0.3:
@@ -3761,10 +3771,12 @@ snapshots:
 
   pirates@4.0.5: {}
 
-  postcss-load-config@4.0.1:
+  postcss-load-config@4.0.1(postcss@8.4.21):
     dependencies:
       lilconfig: 2.0.6
       yaml: 2.3.1
+    optionalDependencies:
+      postcss: 8.4.21
 
   postcss@8.4.21:
     dependencies:
@@ -4021,10 +4033,10 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  swetrix@2.0.1:
+  swetrix@3.1.1:
     dependencies:
-      '@types/node': 18.11.18
-      tslib: 2.5.0
+      '@types/node': 20.12.11
+      tslib: 2.6.2
 
   text-extensions@1.9.0: {}
 
@@ -4067,9 +4079,9 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tslib@2.5.0: {}
+  tslib@2.6.2: {}
 
-  tsup@8.0.0(typescript@5.0.2):
+  tsup@8.0.0(postcss@8.4.21)(typescript@5.0.2):
     dependencies:
       bundle-require: 4.0.1(esbuild@0.19.8)
       cac: 6.7.14
@@ -4079,12 +4091,14 @@ snapshots:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 4.0.1
+      postcss-load-config: 4.0.1(postcss@8.4.21)
       resolve-from: 5.0.0
       rollup: 4.7.0
       source-map: 0.8.0-beta.0
       sucrase: 3.29.0
       tree-kill: 1.2.2
+    optionalDependencies:
+      postcss: 8.4.21
       typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
@@ -4111,6 +4125,8 @@ snapshots:
   uglify-js@3.17.4:
     optional: true
 
+  undici-types@5.26.5: {}
+
   unicorn-magic@0.1.0: {}
 
   uri-js@4.4.1:
@@ -4124,27 +4140,27 @@ snapshots:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-vue-markdown@0.22.2(vite@4.0.4):
+  vite-plugin-vue-markdown@0.22.2(rollup@3.11.0)(vite@4.0.4(@types/node@20.12.11)):
     dependencies:
       '@antfu/utils': 0.7.2
       '@mdit-vue/plugin-component': 0.11.2
       '@mdit-vue/plugin-frontmatter': 0.11.1
       '@mdit-vue/types': 0.11.0
-      '@rollup/pluginutils': 5.0.2
+      '@rollup/pluginutils': 5.0.2(rollup@3.11.0)
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
-      vite: 4.0.4(@types/node@18.11.18)
+      vite: 4.0.4(@types/node@20.12.11)
     transitivePeerDependencies:
       - rollup
 
-  vite@4.0.4(@types/node@18.11.18):
+  vite@4.0.4(@types/node@20.12.11):
     dependencies:
-      '@types/node': 18.11.18
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.11.0
     optionalDependencies:
+      '@types/node': 20.12.11
       fsevents: 2.3.2
 
   vue-template-compiler@2.7.14:
