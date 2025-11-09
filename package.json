@@ -67,7 +67,7 @@
     "vue": "^3"
   },
   "dependencies": {
-    "swetrix": "^2.0.1"
+    "swetrix": "^3.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.0.0",

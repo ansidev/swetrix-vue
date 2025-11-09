@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       swetrix:
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^3.0.0
+        version: 3.7.2
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.0.0
@@ -29,7 +29,7 @@ importers:
         version: 9.5.0
       tsup:
         specifier: ^8.0.0
-        version: 8.0.0(typescript@5.0.2)
+        version: 8.0.0(postcss@8.4.21)(typescript@5.0.2)
       typescript:
         specifier: ^5.0.0
         version: 5.0.2
@@ -48,7 +48,7 @@ importers:
     devDependencies:
       '@vitejs/plugin-vue':
         specifier: ^4.0.0
-        version: 4.0.0(vite@4.0.4)(vue@3.2.45)
+        version: 4.0.0(vite@4.0.4(@types/node@18.11.18))(vue@3.2.45)
       typescript:
         specifier: ^4.9.4
         version: 4.9.4
@@ -57,7 +57,7 @@ importers:
         version: 4.0.4(@types/node@18.11.18)
       vite-plugin-vue-markdown:
         specifier: ^0.22.2
-        version: 0.22.2(vite@4.0.4)
+        version: 0.22.2(rollup@3.11.0)(vite@4.0.4(@types/node@18.11.18))
       vue-tsc:
         specifier: ^1.0.24
         version: 1.0.24(typescript@4.9.4)
@@ -450,6 +450,7 @@ packages:
   '@humanwhocodes/config-array@0.12.3':
     resolution: {integrity: sha512-jsNnTBlMWuTpDkeE3on7+dWJi0D6fdDfeANj/w7MpS8ztROCoLvIO2nG0CcFj+E4k8j4QrSTh4Oryi3i2G669g==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -457,6 +458,7 @@ packages:
 
   '@humanwhocodes/object-schema@2.0.3':
     resolution: {integrity: sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==}
+    deprecated: Use @eslint/object-schema instead
 
   '@hutson/parse-repository-url@3.0.2':
     resolution: {integrity: sha512-H9XAx3hc0BQHY6l+IFSWHDySypcXsvsuLhgYLUGywmJ5pswRVQJUHpOsobnLYp2ZUaUlKiKDrgWWhosOwAEM8Q==}
@@ -599,6 +601,7 @@ packages:
 
   '@volar/vue-typescript@1.0.24':
     resolution: {integrity: sha512-9a25oHDvGaNC0okRS47uqJI6FxY4hUQZUsxeOUFHcqVxZEv8s17LPuP/pMMXyz7jPygrZubB/qXqHY5jEu/akA==}
+    deprecated: 'WARNING: This project has been renamed to @vue/typescript. Install using @vue/typescript instead.'
 
   '@vue/compiler-core@3.2.45':
     resolution: {integrity: sha512-rcMj7H+PYe5wBV3iYeUgbCglC+pbpN8hBLTJvRiK2eKQiWqu+fG9F+8sW99JdL4LQi7Re178UOxn09puSXvn4A==}
@@ -1151,6 +1154,7 @@ packages:
 
   glob@7.1.6:
     resolution: {integrity: sha512-LwaxwyZ72Lk7vZINtNNrywX0ZuLyStrdDtabefZKAY5ZGJhVtgdznluResxNmPitE0SAO+O26sWTHeKSI2wMBA==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-directory@4.0.1:
     resolution: {integrity: sha512-wHTUcDUoZ1H5/0iVqEudYW4/kAlN5cZ3j/bXn0Dpbizl9iaUVeWSHqiOjsgk6OW2bkLclbBjzewBz6weQ1zA2Q==}
@@ -1240,6 +1244,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -1716,6 +1721,10 @@ packages:
   q@1.5.1:
     resolution: {integrity: sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==}
     engines: {node: '>=0.6.0', teleport: '>=0.2.0'}
+    deprecated: |-
+      You or someone you depend on is using Q, the JavaScript Promise library that gave JavaScript developers strong feelings about promises. They can almost certainly migrate to the native JavaScript promise now. Thank you literally everyone for joining me in this bet against the odds. Be excellent to each other.
+
+      (For a CapTP with native promises, see @endo/eventual-send and @endo/captp)
 
   queue-microtask@1.2.3:
     resolution: {integrity: sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==}
@@ -1859,6 +1868,7 @@ packages:
   source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
 
   sourcemap-codec@1.4.8:
     resolution: {integrity: sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==}
@@ -1953,8 +1963,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  swetrix@2.0.1:
-    resolution: {integrity: sha512-7SJuQF8/21xwUX9spJUia0uzEzV6niWh0FEgGdzNxcIAG6cznQ9U/mTb5Iq37s0rNaHFzZGmTkbOqINWEySkQQ==}
+  swetrix@3.7.2:
+    resolution: {integrity: sha512-NMLwCaZM4eA2qLwrBbZykGKOXJkdCrWbvq5QlkY7vF5mHcU4IuxozR/5PBfgPt+lItDxjNGmpry7FkJFCnHG8A==}
 
   text-extensions@1.9.0:
     resolution: {integrity: sha512-wiBrwC1EhBelW12Zy26JeOUkQ5mRu+5o8rpsJk5+2t+Y5vE7e842qtZDQ2g1NpX/29HdyFeJ4nSIhI47ENSxlQ==}
@@ -2004,9 +2014,6 @@ packages:
 
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
-
-  tslib@2.5.0:
-    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
 
   tsup@8.0.0:
     resolution: {integrity: sha512-9rOGn8LsFn2iAg2pCB1jnH7ygVuGjlzIomjw0jKXUxAii3iL5cXgm0jZMPKfFH1bSAjQovJ1DUVPSw+oDuIu8A==}
@@ -2079,6 +2086,7 @@ packages:
 
   vite-plugin-vue-markdown@0.22.2:
     resolution: {integrity: sha512-MJ2cpEcI1ehfcQbpAMPA6ezhK2nrajL4q8999SXPbPMbRHB+gKoJvqrwei6QIdhCLkgwR1ZDEwigphtuoQAbbw==}
+    deprecated: '`vite-plugin-vue-markdown` is renamed to `unplugin-vue-markdown`. For usages in Vite, you also need to change the import path to `unplugin-vue-markdown/vite`.'
     peerDependencies:
       vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0
 
@@ -2270,7 +2278,7 @@ snapshots:
       '@commitlint/types': 19.0.0
       chalk: 5.3.0
       cosmiconfig: 8.3.6(typescript@5.0.2)
-      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.11.18)(cosmiconfig@8.3.6)(typescript@5.0.2)
+      cosmiconfig-typescript-loader: 5.0.0(@types/node@18.11.18)(cosmiconfig@8.3.6(typescript@5.0.2))(typescript@5.0.2)
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
@@ -2515,11 +2523,13 @@ snapshots:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
 
-  '@rollup/pluginutils@5.0.2':
+  '@rollup/pluginutils@5.0.2(rollup@3.11.0)':
     dependencies:
       '@types/estree': 1.0.0
       estree-walker: 2.0.2
       picomatch: 2.3.1
+    optionalDependencies:
+      rollup: 3.11.0
 
   '@rollup/rollup-android-arm-eabi@4.7.0':
     optional: true
@@ -2577,7 +2587,7 @@ snapshots:
 
   '@types/normalize-package-data@2.4.1': {}
 
-  '@vitejs/plugin-vue@4.0.0(vite@4.0.4)(vue@3.2.45)':
+  '@vitejs/plugin-vue@4.0.0(vite@4.0.4(@types/node@18.11.18))(vue@3.2.45)':
     dependencies:
       vite: 4.0.4(@types/node@18.11.18)
       vue: 3.2.45
@@ -2958,7 +2968,7 @@ snapshots:
 
   core-util-is@1.0.3: {}
 
-  cosmiconfig-typescript-loader@5.0.0(@types/node@18.11.18)(cosmiconfig@8.3.6)(typescript@5.0.2):
+  cosmiconfig-typescript-loader@5.0.0(@types/node@18.11.18)(cosmiconfig@8.3.6(typescript@5.0.2))(typescript@5.0.2):
     dependencies:
       '@types/node': 18.11.18
       cosmiconfig: 8.3.6(typescript@5.0.2)
@@ -2971,6 +2981,7 @@ snapshots:
       js-yaml: 4.1.0
       parse-json: 5.2.0
       path-type: 4.0.0
+    optionalDependencies:
       typescript: 5.0.2
 
   cross-spawn@7.0.3:
@@ -3761,10 +3772,12 @@ snapshots:
 
   pirates@4.0.5: {}
 
-  postcss-load-config@4.0.1:
+  postcss-load-config@4.0.1(postcss@8.4.21):
     dependencies:
       lilconfig: 2.0.6
       yaml: 2.3.1
+    optionalDependencies:
+      postcss: 8.4.21
 
   postcss@8.4.21:
     dependencies:
@@ -4021,10 +4034,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  swetrix@2.0.1:
-    dependencies:
-      '@types/node': 18.11.18
-      tslib: 2.5.0
+  swetrix@3.7.2: {}
 
   text-extensions@1.9.0: {}
 
@@ -4067,9 +4077,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tslib@2.5.0: {}
-
-  tsup@8.0.0(typescript@5.0.2):
+  tsup@8.0.0(postcss@8.4.21)(typescript@5.0.2):
     dependencies:
       bundle-require: 4.0.1(esbuild@0.19.8)
       cac: 6.7.14
@@ -4079,12 +4087,14 @@ snapshots:
       execa: 5.1.1
       globby: 11.1.0
       joycon: 3.1.1
-      postcss-load-config: 4.0.1
+      postcss-load-config: 4.0.1(postcss@8.4.21)
       resolve-from: 5.0.0
       rollup: 4.7.0
       source-map: 0.8.0-beta.0
       sucrase: 3.29.0
       tree-kill: 1.2.2
+    optionalDependencies:
+      postcss: 8.4.21
       typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
@@ -4124,13 +4134,13 @@ snapshots:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
 
-  vite-plugin-vue-markdown@0.22.2(vite@4.0.4):
+  vite-plugin-vue-markdown@0.22.2(rollup@3.11.0)(vite@4.0.4(@types/node@18.11.18)):
     dependencies:
       '@antfu/utils': 0.7.2
       '@mdit-vue/plugin-component': 0.11.2
       '@mdit-vue/plugin-frontmatter': 0.11.1
       '@mdit-vue/types': 0.11.0
-      '@rollup/pluginutils': 5.0.2
+      '@rollup/pluginutils': 5.0.2(rollup@3.11.0)
       '@types/markdown-it': 12.2.3
       markdown-it: 13.0.1
       vite: 4.0.4(@types/node@18.11.18)
@@ -4139,12 +4149,12 @@ snapshots:
 
   vite@4.0.4(@types/node@18.11.18):
     dependencies:
-      '@types/node': 18.11.18
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
       rollup: 3.11.0
     optionalDependencies:
+      '@types/node': 18.11.18
       fsevents: 2.3.2
 
   vue-template-compiler@2.7.14:
