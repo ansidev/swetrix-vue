@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       swetrix:
-        specifier: ^2.0.1
-        version: 2.0.1
+        specifier: ^4.0.0
+        version: 4.1.0
     devDependencies:
       '@commitlint/cli':
         specifier: ^19.0.0
@@ -538,26 +538,31 @@ packages:
     resolution: {integrity: sha512-RAdr3OJnUum6Vs83cQmKjxdTg31zJnLLTkjhcFt0auxM6jw00GD6IPFF42uasYPr/wGC6TRm7FsQiJyk0qIEfg==}
     cpu: [arm64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-arm64-musl@4.7.0':
     resolution: {integrity: sha512-nhWwYsiJwZGq7SyR3afS3EekEOsEAlrNMpPC4ZDKn5ooYSEjDLe9W/xGvoIV8/F/+HNIY6jY8lIdXjjxfxopXw==}
     cpu: [arm64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-linux-riscv64-gnu@4.7.0':
     resolution: {integrity: sha512-rlfy5RnQG1aop1BL/gjdH42M2geMUyVQqd52GJVirqYc787A/XVvl3kQ5NG/43KXgOgE9HXgCaEH05kzQ+hLoA==}
     cpu: [riscv64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-gnu@4.7.0':
     resolution: {integrity: sha512-cCkoGlGWfBobdDtiiypxf79q6k3/iRVGu1HVLbD92gWV5WZbmuWJCgRM4x2N6i7ljGn1cGytPn9ZAfS8UwF6vg==}
     cpu: [x64]
     os: [linux]
+    libc: [glibc]
 
   '@rollup/rollup-linux-x64-musl@4.7.0':
     resolution: {integrity: sha512-R2oBf2p/Arc1m+tWmiWbpHBjEcJnHVnv6bsypu4tcKdrYTpDfl1UT9qTyfkIL1iiii5D4WHxUHCg5X0pzqmxFg==}
     cpu: [x64]
     os: [linux]
+    libc: [musl]
 
   '@rollup/rollup-win32-arm64-msvc@4.7.0':
     resolution: {integrity: sha512-CPtgaQL1aaPc80m8SCVEoxFGHxKYIt3zQYC3AccL/SqqiWXblo3pgToHuBwR8eCP2Toa+X1WmTR/QKFMykws7g==}
@@ -1981,8 +1986,8 @@ packages:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
 
-  swetrix@2.0.1:
-    resolution: {integrity: sha512-7SJuQF8/21xwUX9spJUia0uzEzV6niWh0FEgGdzNxcIAG6cznQ9U/mTb5Iq37s0rNaHFzZGmTkbOqINWEySkQQ==}
+  swetrix@4.1.0:
+    resolution: {integrity: sha512-TPOr14oYBt3LquPfWqBjRP6IhbQ+WOiz8ticORRvg4gECb3loFbHB455OUWcpXPCTaFi/E9s5TVgxgqIX+viHQ==}
 
   text-extensions@1.9.0:
     resolution: {integrity: sha512-wiBrwC1EhBelW12Zy26JeOUkQ5mRu+5o8rpsJk5+2t+Y5vE7e842qtZDQ2g1NpX/29HdyFeJ4nSIhI47ENSxlQ==}
@@ -2029,9 +2034,6 @@ packages:
 
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
-
-  tslib@2.5.0:
-    resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
 
   tsup@8.0.0:
     resolution: {integrity: sha512-9rOGn8LsFn2iAg2pCB1jnH7ygVuGjlzIomjw0jKXUxAii3iL5cXgm0jZMPKfFH1bSAjQovJ1DUVPSw+oDuIu8A==}
@@ -4061,10 +4063,7 @@ snapshots:
 
   supports-preserve-symlinks-flag@1.0.0: {}
 
-  swetrix@2.0.1:
-    dependencies:
-      '@types/node': 18.11.18
-      tslib: 2.5.0
+  swetrix@4.1.0: {}
 
   text-extensions@1.9.0: {}
 
@@ -4104,8 +4103,6 @@ snapshots:
   trim-newlines@3.0.1: {}
 
   ts-interface-checker@0.1.13: {}
-
-  tslib@2.5.0: {}
 
   tsup@8.0.0(postcss@8.4.21)(typescript@5.0.2):
     dependencies:
